@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Web developer portfolio — projects, skills, and contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">YN</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <p class="hero-greeting">Hello, I'm</p>
+    <h1>Your Name</h1>
+    <p class="hero-role">Web Developer &amp; Designer</p>
+    <p class="hero-text">
+      Clean code နဲ့ လှပတဲ့ website တွေ တည်ဆောက်ပါတယ်။
+      ရိုးရှင်းပြီး အသုံးဝင်တဲ့ digital experience ကို နှစ်သက်ပါတယ်။
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Work</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="img/me.jpg" alt="Your Name">
+      </div>
+      <div class="about-content">
+        <p>
+          ကျွန်တော်က frontend နဲ့ UI design ကို အာရုံစိုက်ပြီး လုပ်ဆောင်ပါတယ်။
+          User experience ကို အရင်စဉ်းစားပြီး responsive, accessible website တွေ လုပ်ပါတယ်။
+        </p>
+        <p>
+          လက်ရှိတွင် HTML, CSS, JavaScript နဲ့ modern tools တွေကို သင်ယူနေပါတယ်။
+          Project အသစ်တွေ လုပ်ဖို့ အမြဲစိတ်အားထက်သန်ပါတယ်။
+        </p>
+        <ul class="about-stats">
+          <li><strong>2+</strong><span>Years learning</span></li>
+          <li><strong>10+</strong><span>Projects</span></li>
+          <li><strong>5+</strong><span>Technologies</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <article class="skill-card">
+        <span class="skill-icon">&#60;/&#62;</span>
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript — responsive layouts နဲ့ interactive UI</p>
+      </article>
+      <article class="skill-card">
+        <span class="skill-icon">&#9670;</span>
+        <h3>Design</h3>
+        <p>Typography, spacing, color — ရိုးရှင်းပြီး လှပတဲ့ interface</p>
+      </article>
+      <article class="skill-card">
+        <span class="skill-icon">&#9881;</span>
+        <h3>Tools</h3>
+        <p>Git, VS Code, Figma — version control နဲ့ design workflow</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-thumb project-thumb-1"></div>
+        <div class="project-body">
+          <h3>Anniversary Site</h3>
+          <p>Animated romantic landing page with music and canvas effects.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+          <a href="../anniversary/2ndanni.html" class="project-link">View project →</a>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-thumb project-thumb-2"></div>
+        <div class="project-body">
+          <h3>Contact Form</h3>
+          <p>Form validation with PHP backend and client-side checks.</p>
+          <div class="project-tags">
+            <span>PHP</span><span>JS</span>
+          </div>
+          <a href="../contact-form-validation/index.html" class="project-link">View project →</a>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-thumb project-thumb-3"></div>
+        <div class="project-body">
+          <h3>Portfolio</h3>
+          <p>This site — minimal, responsive personal portfolio template.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span>
+          </div>
+          <a href="#home" class="project-link">You are here →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p class="contact-intro">Project idea ရှိရင် သို့မဟုတ် မေးခွန်းရှိရင် ပို့ပေးပါ။</p>
+    <form class="contact-form" id="contact-form">
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" required placeholder="Your name">
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" required placeholder="you@email.com">
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="4" required placeholder="Your message..."></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-note" id="form-note" hidden>Thank you! Message received (demo).</p>
+    </form>
+    <div class="social-links">
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:you@email.com">Email</a>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Your Name. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
