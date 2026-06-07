@@ -533,6 +533,7 @@ nav {
     .nav-toggle {
         display: flex;
         flex-direction: column;
+        
     }
     
     .nav-links {
@@ -555,6 +556,10 @@ nav {
         transform: translateY(0);
         opacity: 1;
         pointer-events: auto;
+    }
+
+    .nav-links a {
+        color: var(--text-muted);
     }
 
     .nav-toggle.active span:nth-child(1) {
