@@ -533,58 +533,50 @@ nav {
     .nav-toggle {
         display: flex;
         flex-direction: column;
-        
     }
-    
+
     .nav-links {
         position: fixed;
+        flex-direction: column;
         top: var(--nav-h);
         left: 0;
         right: 0;
-        flex-direction: column;
-        pointer-events: none;
-        background: var(--bg);
-        gap: 1rem;
         padding: 1.5rem;
+        gap: 1rem;
+        background: var(--bg);
         transform: translateY(-120%);
+        opacity: 0;
         transition: transform 0.3s, opacity 0.3s;
         border-bottom: 1px solid var(--border);
-        opacity: 0;
+        pointer-events: none;
     }
 
-    .nav-links.open{
+    .nav-links.open {
         transform: translateY(0);
         opacity: 1;
         pointer-events: auto;
     }
 
-    .nav-links a {
-        color: var(--text-muted);
-    }
-
     .nav-toggle.active span:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
-
     .nav-toggle.active span:nth-child(2) {
-        opacity : 0;
+        opacity: 0;
     }
-
-    .nav-toggle.active span:nth-child(3) {
+    .nav-toggle.active span:nth-child(3){
         transform: translateY(-7px) rotate(-45deg);
     }
 
-    .about.grid {
+    .about-grid {
+        display: flex;
         grid-template-columns: 1fr;
         justify-items: center;
         text-align: center;
     }
-
     .about-photo {
         width: 300px;
         height: 500px;
     }
-
     .about-info {
         justify-content: center;
         width: 300px;
@@ -593,6 +585,12 @@ nav {
 }
 
 @media (max-width: 480px) {
+    .about-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
     .my-actions {
         flex-direction: column;
     }
