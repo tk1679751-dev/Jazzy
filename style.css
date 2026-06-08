@@ -78,7 +78,7 @@ nav {
 }
 
 .nav-logo {
-    font-wight : 600;
+    font-weight : 600;
     font-size : 1.125rem;
     color: var(--text);
     letter-spacing: -0.02rem;
